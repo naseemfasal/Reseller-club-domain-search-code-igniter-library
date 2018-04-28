@@ -3,8 +3,8 @@ class Resellerclub{
   
   
     function check_domain($domain_name,$domain_ext){
-        $key='gxlW1KuKWiQN6b1pzohpD1yhzK2ervqS';
-        $reseller_id='706841';
+        $key='';  //your key
+        $reseller_id='';   //your id
         $url="https://httpapi.com/api/domains/available.json?auth-userid=$reseller_id&api-key=$key&domain-name=$domain_name&tlds=$domain_ext";
         $ch = curl_init();
         $timeout = 5;
